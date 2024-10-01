@@ -1,0 +1,97 @@
+.contact-form {
+  display: flex;
+  width: 100%;
+  box-shadow: 0px 0px 60px 30px #00000008;
+
+  img {
+    width: 30%;
+  }
+
+  .form-content {
+    width: 70%;
+    padding: 25px 50px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+    .name {
+      display: flex;
+      gap: 50px;
+
+      label {
+        width: 50%;
+      }
+    }
+
+    $primary-color: #000000; // Main color
+    $border-color: #e0e0e0; // Border color
+    $error-color: #e74c3c; // Error color
+    $background-color: #ffffff; // Background color
+    $label-color: #000000; // Label color
+    $focus-border-color: #000000; // Focus border color
+    $font-family: "Roboto", sans-serif; // Font family
+
+    // Label styles
+    label {
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 16px;
+      color: $label-color;
+      margin-bottom: 25px;
+      transition: color 0.3s;
+
+      // Adjust label color on input focus
+      input:focus + &,
+      textarea:focus + & {
+        color: $primary-color;
+      }
+
+      // Input & Textarea styles
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px 10px;
+        border: 1px solid $border-color;
+        border-radius: 6px;
+        background-color: $background-color;
+        color: #333;
+        font-family: $font-family;
+        font-size: 16px;
+        transition: border 0.3s, box-shadow 0.3s;
+        outline: none;
+        font-weight: 300;
+
+        &:focus {
+          border-color: $focus-border-color;
+          box-shadow: 0 0 5px rgba($primary-color, 0.5);
+          outline: none; // Remove default outline
+        }
+
+        &:hover {
+          border-color: $border-color;
+        }
+
+        &.error {
+          border-color: $error-color;
+          background-color: rgba($error-color, 0.1);
+        }
+      }
+
+      // Textarea specific styles
+      textarea {
+        min-height: 100px; // Minimum height for the textarea
+        max-height: 300px; // Maximum height for the textarea
+        resize: vertical; // Allow vertical resizing only
+      }
+    }
+  }
+}

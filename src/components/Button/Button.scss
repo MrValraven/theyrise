@@ -1,0 +1,62 @@
+.button {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow, transform;
+  background-color: #000000;
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px #5f6c7b,
+    inset 0px -3px 0px #000000;
+  padding: 10px 32px;
+  font-size: 18px;
+  border-radius: 6px;
+  color: #fffffe;
+  transition: all 0.15s ease, transform 0.15s ease;
+
+  &:hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px #5f6c7b,
+      inset 0px -3px 0px #000000, 10%;
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: inset 0px 3px 7px #000000;
+    transform: translateY(2px);
+  }
+
+  &:disabled {
+    background-color: white;
+    color: #5f6c7b;
+
+    opacity: 0.5;
+    box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
+      0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+    cursor: not-allowed;
+
+    &:hover {
+      transform: translateY(0px);
+      box-shadow: 0px;
+    }
+
+    &:active {
+      box-shadow: 0px;
+      transform: translateY(0px);
+    }
+  }
+}
+
+.secondary {
+  background-color: #fcfcfd;
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+  color: #36395a;
+
+  &:hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%),
+      0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: inset 0px 3px 7px #d6d6e7;
+    transform: translateY(2px);
+  }
+}

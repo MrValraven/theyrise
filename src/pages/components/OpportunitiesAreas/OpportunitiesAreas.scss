@@ -1,0 +1,40 @@
+.opportunities-areas {
+  h1 {
+    font-size: 64px;
+    margin-bottom: 50px;
+  }
+
+  .areas-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    .area-card {
+      border-radius: 12px;
+      transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      border: 1px solid white;
+
+      &:hover {
+        cursor: pointer;
+        transform: translateY(-10px);
+        border: 1px solid #dcdcdc;
+      }
+      .image-container {
+        overflow: hidden;
+        height: 200px;
+        border-bottom: 1px solid #e0e0e0;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .area-card-text {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.about {
+  padding: 50px 0;
+  h1 {
+    font-size: 64px;
+  }
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .about-text {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      p {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5;
+      }
+    }
+
+    .about-image {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: -100px;
+    }
+  }
+}
