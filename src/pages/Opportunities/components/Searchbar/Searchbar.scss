@@ -1,0 +1,30 @@
+.searchbar {
+  margin-bottom: 25px;
+
+  .input-container {
+    position: relative;
+    width: 100%;
+
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      font-family: "Roboto", sans-serif;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      padding: 20px 55px 20px 20px;
+      border-radius: 6px;
+      font-size: 18px;
+
+      border: 1px solid #dcdcdc;
+    }
+
+    i {
+      position: absolute;
+      top: 42px;
+      right: 25px;
+      font-size: 20px;
+      opacity: 0.6;
+    }
+  }
+}

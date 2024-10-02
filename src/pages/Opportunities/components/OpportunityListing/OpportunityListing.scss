@@ -1,0 +1,83 @@
+.opportunity-listing {
+  border-radius: 6px;
+  display: flex;
+
+  /* #6766f1
+      #2e7fe2 */
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #14c27a;
+    border-radius: 6px;
+    min-width: 125px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+
+    &.grant {
+      background-color: #388e3c;
+    }
+    &.scholarship {
+      background-color: #f57c00;
+    }
+    &.award {
+      background-color: #ffa000;
+    }
+    &.course {
+      background-color: #1976d2;
+    }
+
+    img {
+      height: 50px;
+    }
+
+    p {
+      text-transform: capitalize;
+    }
+  }
+
+  .opportunity-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .area {
+    font-size: 14px; /* Smaller font size for the area */
+    color: #ffffff; /* White text color */
+    background-color: #388e3c; /* Background color for the area */
+    padding: 5px 10px; /* Padding for spacing inside */
+    border-radius: 6px; /* Rounded corners */
+    text-transform: lowercase; /* Uppercase for emphasis */
+    letter-spacing: 2px; /* Spacing between letters */
+    font-weight: 500; /* Slightly bold text */
+  }
+
+  .tags {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+
+    span {
+      border-radius: 6px;
+      padding: 5px 10px;
+      font-size: 14px;
+      background-color: grey;
+      color: white;
+    }
+  }
+
+  .opportunity-apply {
+    a {
+      text-decoration: underline;
+      opacity: 0.8;
+      transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

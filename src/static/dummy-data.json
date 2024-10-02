@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Queer Engineering Scholarship",
+    "description": "A scholarship designed to support LGBTQ+ individuals pursuing degrees in engineering. This initiative aims to empower underrepresented voices in the field and promote diversity in engineering programs.",
+    "type": "scholarship",
+    "tags": ["queer", "LGBTQ+"],
+    "area": "engineering",
+    "link": "https://example.com/apply-queer-engineering"
+  },
+  {
+    "id": 2,
+    "name": "Women in Science Grant",
+    "description": "This grant aims to provide financial aid to women conducting research in scientific fields. It focuses on fostering innovative projects that can lead to significant advancements in various scientific disciplines.",
+    "type": "grant",
+    "tags": ["women", "science"],
+    "area": "science",
+    "link": "https://example.com/apply-women-science"
+  },
+  {
+    "id": 3,
+    "name": "Arts Talent Award",
+    "description": "An award recognizing outstanding talent in various art disciplines. The award seeks to encourage creativity and celebrate the unique contributions of artists to society.",
+    "type": "award",
+    "tags": ["arts", "creativity"],
+    "area": "arts",
+    "link": "https://example.com/apply-arts-talent"
+  },
+  {
+    "id": 4,
+    "name": "Business Leadership Course",
+    "description": "A course designed to help individuals improve leadership skills in the business sector. Participants will learn effective strategies to inspire teams and drive organizational success.",
+    "type": "course",
+    "tags": ["leadership", "business"],
+    "area": "business",
+    "link": "https://example.com/apply-business-leadership"
+  },
+  {
+    "id": 5,
+    "name": "Music Diversity Award",
+    "description": "An award celebrating artists who incorporate diverse cultural elements into their music. This recognition seeks to highlight the richness and vibrancy that diversity brings to the music industry.",
+    "type": "award",
+    "tags": ["diversity", "music"],
+    "area": "music",
+    "link": "https://example.com/apply-music-diversity"
+  },
+  {
+    "id": 6,
+    "name": "Queer Medicine Research Grant",
+    "description": "A grant for queer individuals conducting groundbreaking research in medicine. The goal is to support projects that address health disparities faced by the LGBTQ+ community.",
+    "type": "grant",
+    "tags": ["queer", "medicine"],
+    "area": "medicine",
+    "link": "https://example.com/apply-queer-medicine"
+  },
+  {
+    "id": 7,
+    "name": "Law for Social Justice Scholarship",
+    "description": "A scholarship designed to support individuals committed to social justice through law. This funding aims to equip future legal advocates with the resources they need to create meaningful change.",
+    "type": "scholarship",
+    "tags": ["social justice", "law"],
+    "area": "law",
+    "link": "https://example.com/apply-law-social-justice"
+  },
+  {
+    "id": 8,
+    "name": "Social Work for LGBTQ+ Communities Course",
+    "description": "A course focused on social work practices within LGBTQ+ communities. This training emphasizes the importance of culturally competent support for diverse populations.",
+    "type": "course",
+    "tags": ["LGBTQ+", "social work"],
+    "area": "social",
+    "link": "https://example.com/apply-social-work-lgbtq"
+  },
+  {
+    "id": 9,
+    "name": "Women in Engineering Award",
+    "description": "An award that recognizes women who excel in the field of engineering. This initiative aims to inspire future generations of women to pursue careers in STEM fields.",
+    "type": "award",
+    "tags": ["women", "engineering"],
+    "area": "engineering",
+    "link": "https://example.com/apply-women-engineering"
+  },
+  {
+    "id": 10,
+    "name": "Medicine for Marginalized Communities Scholarship",
+    "description": "A scholarship aimed at supporting individuals working towards improving healthcare for marginalized communities. This scholarship is intended for those committed to making healthcare more accessible and equitable.",
+    "type": "scholarship",
+    "tags": ["marginalized", "medicine"],
+    "area": "medicine",
+    "link": "https://example.com/apply-medicine-marginalized"
+  },
+  {
+    "id": 11,
+    "name": "Innovative Science Research Grant",
+    "description": "A grant for individuals pushing the boundaries in scientific research. This funding is available for projects that promise to bring significant breakthroughs in their respective fields.",
+    "type": "grant",
+    "tags": ["innovation", "science"],
+    "area": "science",
+    "link": "https://example.com/apply-innovative-science"
+  },
+  {
+    "id": 12,
+    "name": "Inclusive Music Education Course",
+    "description": "A course designed to train music educators in fostering inclusive environments. Participants will learn techniques to engage students from diverse backgrounds effectively.",
+    "type": "course",
+    "tags": ["inclusive", "music education"],
+    "area": "music",
+    "link": "https://example.com/apply-inclusive-music"
+  },
+  {
+    "id": 13,
+    "name": "Law for Women’s Rights Award",
+    "description": "An award recognizing individuals advancing women's rights through legal work. This award aims to honor those who have made significant contributions to gender equality in the legal field.",
+    "type": "award",
+    "tags": ["women's rights", "law"],
+    "area": "law",
+    "link": "https://example.com/apply-law-womens-rights"
+  },
+  {
+    "id": 14,
+    "name": "Engineering for Sustainability Grant",
+    "description": "A grant supporting engineers working on sustainable technologies. This funding is intended to foster innovation in creating environmentally friendly engineering solutions.",
+    "type": "grant",
+    "tags": ["sustainability", "engineering"],
+    "area": "engineering",
+    "link": "https://example.com/apply-engineering-sustainability"
+  },
+  {
+    "id": 15,
+    "name": "Arts for Social Change Scholarship",
+    "description": "A scholarship for artists using their work to promote social change. This initiative seeks to support creative projects that inspire action and foster community engagement.",
+    "type": "scholarship",
+    "tags": ["social change", "arts"],
+    "area": "arts",
+    "link": "https://example.com/apply-arts-social-change"
+  }
+]
