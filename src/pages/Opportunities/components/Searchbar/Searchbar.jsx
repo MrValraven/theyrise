@@ -13,7 +13,7 @@ const Searchbar = ({ filterParameters, setFilterParameters }) => {
                 <div className="input-container">
                     <input
                         type="text"
-                        placeholder="Search by name"
+                        placeholder="Search by name or tag"
                         value={filterParameters}
                         onChange={handleChange}
                     />
