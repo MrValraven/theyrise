@@ -102,7 +102,7 @@ const Opportunities = () => {
         <div className='opportunities'>
             <Header />
             <h1>Opportunities
-                <Button buttonText='Reset area filter' buttonStyle={'secondary'} clickEvent={resetAreaFilter} />
+                {areaFilter ? <Button buttonText='Reset area filter' buttonStyle={'secondary'} clickEvent={resetAreaFilter} /> : null}
             </h1>
             <Searchbar setFilterParameters={setFilters} filterParameters={filters} />
             <div className="opportunities-container">
