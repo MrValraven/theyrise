@@ -15,10 +15,11 @@ const Button = ({ buttonText, disabled, url, buttonStyle, clickEvent }) => {
     return (
         <button
             disabled={disabled}
-            className={`button ${buttonStyle}`}
-            onClick={url ? navigateToOtherPage : clickEvent}
-        >
-            {buttonText}
+            className={`pushable button ${buttonStyle}`}
+            onClick={url ? navigateToOtherPage : clickEvent}>
+            <span className="shadow"></span>
+            <span className="edge"></span>
+            <span className="front">{buttonText}</span>
         </button>
     );
 };
