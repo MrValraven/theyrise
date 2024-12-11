@@ -21,7 +21,7 @@ const OpportunitiesSection = () => {
                     </Link>
                 )}
             </div>
-            <Button buttonText='See all female focused opportunities' buttonStyle="primary" url={"/opportunities"} />
+            <Button buttonText='See all female focused opportunities' buttonStyle="primary" url={"/opportunities?tag=women"} />
         </section>
     )
 }

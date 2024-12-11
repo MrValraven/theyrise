@@ -112,7 +112,7 @@ const Opportunities = () => {
         <div className='opportunities'>
             <Header />
             <h1>Opportunities
-                {areaFilter ? <Button buttonText='Reset url filters' buttonStyle={'secondary'} clickEvent={resetAreaFilter} /> : null}
+                {areaFilter || tagFilter ? <Button buttonText='Reset url filters' buttonStyle={'secondary'} clickEvent={resetAreaFilter} /> : null}
             </h1>
             <Searchbar setFilterParameters={setFilters} filterParameters={filters} />
             <div className="opportunities-container">
