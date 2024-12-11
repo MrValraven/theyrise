@@ -3,17 +3,45 @@
   width: 100%;
   box-shadow: 0px 0px 60px 30px #00000008;
 
-  img {
-    width: 30%;
+  .contact-info {
+    border-right: 1px solid;
+    margin: 50px 0px;
+    padding: 25px 50px;
+    font-family: "Poppins", Inter, system-ui, Avenir, Helvetica, Arial,
+      sans-serif;
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .social-media-icons {
+      margin-top: 10px;
+
+      .icon-container {
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid grey;
+        padding: 10px;
+
+        img {
+          width: 30px;
+        }
+      }
+    }
   }
 
   .form-content {
-    width: 70%;
+    width: 75%;
     padding: 25px 50px;
-  }
-
-  h2 {
-    margin-bottom: 10px;
   }
 
   form {

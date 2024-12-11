@@ -12,7 +12,7 @@ const AboutUsSection = () => {
                     </p>
                     <p>
                         <strong>Our Story</strong>
-                        <span>TheyRise and SheRise were created with a shared vision—bridging the gap between people and the opportunities they need to succeed. Inspired by the challenges faced in first hand, our founders, <a href='https://www.linkedin.com/in/rita-pinhol/'>Rita Pinhol</a>, <a href='#'>Nathalia Müller</a> and <a href='https://www.linkedin.com/in/tiagoagcosta/'>Tiago Costa</a>, were driven to create a platform where these barriers could be dismantled.</span>
+                        <span>TheyRise and SheRise were created with a shared vision—bridging the gap between people and the opportunities they need to succeed. Inspired by the challenges faced in first hand, our founders, <a href='https://www.linkedin.com/in/rita-pinhol/' target="_blank" rel="noopener noreferrer">Rita Pinhol</a>, <a href='https://www.linkedin.com/in/nathalia-muller/' target="_blank" rel="noopener noreferrer">Nathalia Müller</a> and <a href='https://www.linkedin.com/in/tiagoagcosta/' target="_blank" rel="noopener noreferrer">Tiago Costa</a>, were driven to create a platform where these barriers could be dismantled.</span>
                     </p>
                     <p>SheRise was born from the recognition that women often face unique hurdles in their journey. Through SheRise, we provide the resources and support that women need to pursue their passions and shape their future.
                     </p>

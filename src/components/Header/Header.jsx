@@ -18,7 +18,7 @@ const Header = () => {
                 <ul className="navbarDesktop">
                     <Link to="/">Home</Link>
                     <Link to="/opportunities">Opportunities</Link>
-                    <Link to="/shrerise">SheRise</Link>
+                    <Link to="/sherise">SheRise</Link>
                     <Link to="/#about">About Us</Link>
                     <Link to="/#contacts">Know about more initiatives? Share with us!</Link>
                 </ul>

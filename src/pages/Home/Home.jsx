@@ -6,6 +6,7 @@ import OpportunitiesAreas from '../components/OpportunitiesAreas/OpportunitiesAr
 
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import AfterHeroSection from '../components/AfterHeroSection/AfterHeroSection';
 
 const Home = () => {
     const location = useLocation();
@@ -21,6 +22,7 @@ const Home = () => {
     return (
         <div>
             <HeroSection />
+            <AfterHeroSection />
             <OpportunitiesAreas />
             <AboutUsSection />
             <ContactsSection />

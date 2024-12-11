@@ -3,7 +3,7 @@ import OpportunitiesData from '../../static/dummy-data.json'
 import OpportunityListing from './components/OpportunityListing/OpportunityListing'
 import Searchbar from './components/Searchbar/Searchbar'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import './Opportunities.scss'
@@ -51,47 +51,58 @@ const useQuery = () => {
 const Opportunities = () => {
     const [filters, setFilters] = useState("");
     const [areaFilter, setAreaFilter] = useState("");
+    const [tagFilter, setTagFilter] = useState("");
     const [opportunities, setOpportunities] = useState([]);
     const UrlQuery = useQuery();
     const navigate = useNavigate();
     const location = useLocation();
 
-    const filterOpportunityData = (arrayOfOpportunities) => {
+    const filterOpportunityData = useCallback((arrayOfOpportunities) => {
         const filteredArray = arrayOfOpportunities.filter(opportunity => {
             const matchesArea = areaFilter
                 ? opportunity.area && opportunity.area.toLowerCase() === areaFilter.toLowerCase()
                 : true;
+
+            const tagFilterFromURL = opportunity.tags.some((tag => tag === tagFilter.toLowerCase())) ?? true;
+            console.log(tagFilterFromURL)
+            console.log(tagFilter)
+            console.log(opportunity.tags)
 
             const matchesFilters = filters
                 ? opportunity.tags.some(tag => tag.toLowerCase().includes(filters.toLowerCase())) ||
                 opportunity.name.toLowerCase().includes(filters.toLowerCase())
                 : true;
 
-            return matchesArea && matchesFilters;
+            return matchesArea && tagFilterFromURL && matchesFilters;
         })
 
         return filteredArray
-    }
+    }, [areaFilter, filters, tagFilter])
 
     const resetAreaFilter = () => {
         setAreaFilter("");
+        setTagFilter("");
         navigate(location.pathname, { replace: true });
     }
 
     useEffect(() => {
-        if (filters || areaFilter) {
+        if (filters || areaFilter || tagFilter) {
             setOpportunities(() => filterOpportunityData(OpportunitiesData));
         }
         else setOpportunities(OpportunitiesData)
 
-    }, [filters, areaFilter])
+    }, [filters, areaFilter, tagFilter, filterOpportunityData])
 
 
     useEffect(() => {
         const area = UrlQuery.get('area');
-        console.log()
+        const tag = UrlQuery.get('tag');
         if (area) {
             setAreaFilter(area)
+        }
+
+        if (tag) {
+            setTagFilter(tag);
         }
     }, [UrlQuery])
 
@@ -102,11 +113,11 @@ const Opportunities = () => {
         <div className='opportunities'>
             <Header />
             <h1>Opportunities
-                {areaFilter ? <Button buttonText='Reset area filter' buttonStyle={'secondary'} clickEvent={resetAreaFilter} /> : null}
+                {areaFilter ? <Button buttonText='Reset url filters' buttonStyle={'secondary'} clickEvent={resetAreaFilter} /> : null}
             </h1>
             <Searchbar setFilterParameters={setFilters} filterParameters={filters} />
             <div className="opportunities-container">
-                {opportunities.map(opportunity =>
+                {opportunities.length ? opportunities.map(opportunity =>
                     <OpportunityListing
                         key={opportunity.id}
                         title={opportunity.name}
@@ -116,7 +127,9 @@ const Opportunities = () => {
                         area={opportunity.area}
                         link={opportunity.link}
                     />
-                )}
+                ) :
+                    <div>No opportunities listed with the following filters</div>
+                }
             </div>
         </div>
     )

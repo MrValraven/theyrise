@@ -1,16 +1,16 @@
-import { opportunitiesAreas } from '../../../static/opportunityAreas'
+import { opportunitiesAreas } from '../../../../static/opportunityAreas'
 import { Link } from 'react-router-dom';
 
-import './OpportunitiesAreas.scss';
-import Button from '../../../components/Button/Button';
+import './OpportunitiesSection.scss';
+import Button from '../../../../components/Button/Button';
 
-const OpportunitiesAreas = () => {
+const OpportunitiesSection = () => {
     return (
-        <section className='opportunities-areas'>
+        <section className='opportunities-section'>
             <h1>The Opportunities</h1>
             <div className="areas-board">
                 {opportunitiesAreas.map(opportunity =>
-                    <Link to={`/opportunities?area=${opportunity.destinationURL}`} key={opportunity.title} className='area-card'>
+                    <Link to={`/opportunities?area=${opportunity.destinationURL}&tag=women`} key={opportunity.title} className='area-card'>
                         <div className="image-container">
                             <img src={opportunity.imageSource} alt="" />
                         </div>
@@ -21,9 +21,9 @@ const OpportunitiesAreas = () => {
                     </Link>
                 )}
             </div>
-            <Button buttonText='See all opportunities' buttonStyle="primary" url={"/opportunities"} />
+            <Button buttonText='See all female focused opportunities' buttonStyle="primary" url={"/opportunities"} />
         </section>
     )
 }
 
-export default OpportunitiesAreas
+export default OpportunitiesSection;

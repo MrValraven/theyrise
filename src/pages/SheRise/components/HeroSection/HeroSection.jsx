@@ -1,0 +1,22 @@
+import Button from '../../../../components/Button/Button.jsx';
+
+import HeroImage from '../../../../assets/heroImage.svg';
+import './HeroSection.scss';
+
+const HeroSection = () => {
+    return (
+        <section className='heroSection'>
+            <div className="hero-text">
+                <h1>Empowering Women</h1>
+                <p><strong>Welcome to SheRise: </strong>A platform dedicated to helping women achieve their goals by connecting them with scholarships, grants, awards and courses designed to support their journey and promote their talent</p>
+                <div className="hero-buttons">
+                    <Button buttonText="See Opportunities" buttonStyle="primary" url={'/opportunities'} />
+                    <Button buttonText="Learn more about us" buttonStyle="secondary" url={'/#contacts'} />
+                </div>
+            </div>
+            <img src={HeroImage} alt="" />
+        </section>
+    )
+}
+
+export default HeroSection
