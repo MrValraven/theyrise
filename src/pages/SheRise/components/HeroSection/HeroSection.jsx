@@ -1,6 +1,6 @@
 import Button from '../../../../components/Button/Button.jsx';
 
-import HeroImage from '../../../../assets/heroImage.svg';
+import HeroImage from '../../../../assets/sherise/hero-sherise.svg';
 import './HeroSection.scss';
 
 const HeroSection = () => {

@@ -5,22 +5,46 @@
 
   .logo {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 
     cursor: pointer;
     padding: 10px;
 
+    .image-container {
+      border: 1px solid black;
+      padding: 10px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
     img {
-      margin-right: 5px;
-      width: 35px;
+      width: 20px;
     }
 
     p {
-      font-weight: bold;
+      font-weight: 400;
+      font-size: 32px;
     }
   }
 
   nav {
+    .sherise-container {
+      display: flex;
+      align-items: center;
+
+      .image-container {
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 50%;
+        margin-right: 5px;
+        margin-bottom: 5px;
+      }
+
+      img {
+        width: 10px;
+      }
+    }
+
     .navbarDesktop {
       display: flex;
       align-items: center;

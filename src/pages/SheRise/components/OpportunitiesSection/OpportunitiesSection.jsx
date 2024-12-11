@@ -12,7 +12,7 @@ const OpportunitiesSection = () => {
                 {opportunitiesAreas.map(opportunity =>
                     <Link to={`/opportunities?area=${opportunity.destinationURL}&tag=women`} key={opportunity.title} className='area-card'>
                         <div className="image-container">
-                            <img src={opportunity.imageSource} alt="" />
+                            <img src={opportunity.imageSourceSherise} alt="" />
                         </div>
                         <div className="area-card-text">
                             <h2>{opportunity.title}</h2>

@@ -63,10 +63,9 @@ const Opportunities = () => {
                 ? opportunity.area && opportunity.area.toLowerCase() === areaFilter.toLowerCase()
                 : true;
 
-            const tagFilterFromURL = opportunity.tags.some((tag => tag === tagFilter.toLowerCase())) ?? true;
-            console.log(tagFilterFromURL)
-            console.log(tagFilter)
-            console.log(opportunity.tags)
+            const tagFilterFromURL = tagFilter ?
+                opportunity.tags.some((tag => tag === tagFilter.toLowerCase())) ?? true :
+                true;
 
             const matchesFilters = filters
                 ? opportunity.tags.some(tag => tag.toLowerCase().includes(filters.toLowerCase())) ||
